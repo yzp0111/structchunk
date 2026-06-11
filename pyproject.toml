@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "structchunk"
+version = "0.1.0"
+description = "Structure-aware text chunking for RAG pipelines. Pure-Python, no deps, hierarchical and linear algorithms with section-aware merging, header-prefix breadcrumbs, and Snowflake BIGINT chunk IDs."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "yzp0111", email = "564087945@qq.com"},
+]
+keywords = [
+    "rag",
+    "chunking",
+    "markdown",
+    "retrieval-augmented-generation",
+    "llm",
+    "vector-search",
+    "dify",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Markup :: Markdown",
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/yzp0111/structchunk"
+Repository = "https://github.com/yzp0111/structchunk"
+Issues = "https://github.com/yzp0111/structchunk/issues"
+
+[project.scripts]
+structchunk = "structchunk._cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"structchunk" = ["py.typed"]
