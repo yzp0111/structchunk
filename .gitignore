@@ -12,3 +12,4 @@ test_result/
 .DS_Store
 .sisyphus/
 uv.lock
+向量库选择.md
