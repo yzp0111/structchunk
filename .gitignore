@@ -11,3 +11,4 @@ test_result/
 *.swp
 .DS_Store
 .sisyphus/
+uv.lock
