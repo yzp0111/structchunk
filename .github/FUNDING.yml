@@ -1,0 +1,14 @@
+ # structchunk funding configuration.
+ # To enable a funding platform, uncomment the relevant line and fill in
+ # the username / link. See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+ #
+ # github: [yzp0111]
+ # patreon: username
+ # open_collective: structchunk
+ # ko_fi: username
+ # tidelift: pypi/structchunk
+ # community_bridge: structchunk
+ # liberapay: username
+ # issuehunt: structchunk
+ # otechie: username
+ # custom: ['https://example.com/structchunk/donate']

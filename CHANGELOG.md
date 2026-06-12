@@ -1,9 +1,20 @@
 # Changelog
 
+[中文版](CHANGELOG.zh-CN.md)
+
 All notable changes to structchunk are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Added
+- Bilingual documentation (English canonical, Chinese mirror)
+- `docs/` directory with topic-organized guides (installation, quickstart, algorithms, api, cli, metadata, why-structchunk, database-schema)
+- GitHub community health files (issue templates, PR template, CODEOWNERS, FUNDING)
+- `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, `AUTHORS.md`
+- `scripts/check_doc_sync.py` for EN/zh-CN heading parity verification
 
 ## [0.1.0] - 2026-06-11
 
