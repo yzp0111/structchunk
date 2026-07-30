@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import os
+import platform
 import threading
 import time
 from dataclasses import dataclass, field
@@ -58,7 +59,7 @@ def _default_node_id() -> int:
     IDs even when many chunks are created in the same millisecond
     across different processes.
     """
-    hostname = os.uname().nodename.encode("utf-8")
+    hostname = platform.node().encode("utf-8")
     return int(hashlib.md5(hostname).hexdigest()[:4], 16) & _MAX_NODE
 
 
